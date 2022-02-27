@@ -1,0 +1,25 @@
+@media screen and (max-width: 1130px) {
+    .gameplay_inner{
+        flex-direction: column;
+    }
+    .about,.about_images{
+        width: 90%;
+    }
+    .img{
+        width: 25%;
+    }
+    .img:first-child{
+        padding: 3rem 0 2rem 0;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .buttons button{
+        margin: 2rem 0;
+        width: 60%;
+    }
+ 
+}

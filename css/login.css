@@ -1,0 +1,60 @@
+.modal_bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    
+
+}
+.modal_active{
+    visibility: visible;
+    opacity: 1;
+}
+.modal{
+    font-size: 3rem;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid linear-gradient(rgba(200, 6, 6,0.5), rgba(0,0,0,0.5));
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, rgba(0,0,0,0.7),rgba(200, 6, 6,0.7));
+    padding: -20px 0 20px 0;
+
+}
+.modal input{
+    font-size: 2rem;
+    color: #fff;
+    width: 20rem;
+    height: 4rem;
+    border: 0;
+    border-bottom: 3px solid #fff;
+    background-color: transparent;
+    font-family: Populationzerobb;
+    margin-bottom: 1rem;
+}
+input:focus{
+    outline: 0;
+}
+.modal_close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff;
+    font-family: Scorchedearth;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}

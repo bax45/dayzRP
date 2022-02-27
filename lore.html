@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/lore.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="name"><p><a href="index.html">S.T.A.L.K.E.R  LAST  HOPE</a></p></div>
+                <nav class="nav">
+                    <a href="https://discord.com/channels/772818745085132830/772823209158246410" class="link" id="news">NEWS</a>
+                    <a href="https://discord.com/channels/772818745085132830/903924498670174219" class="link" id="rules">RULES</a>
+                    <a href="https://discord.gg/AfedpnGz" class="link" id="discord">DISCORD</a>
+                    <a href="#" class="link" id="login">LOGIN</a>
+        
+                </nav>
+            </div>
+            <div class="modal_bg">
+                <div class="modal">
+                    <h1>login</h1>
+                    <label for="email" name="email"  >Email </label>
+                    <input type="email" placeholder="alex@smith.com">
+                    <label for="password" name="password">Password </label>
+                    <input type="password">
+                    <button class="login_btn">login</button>
+                    <span class="modal_close">X</span>
+                </div>
+            </div>
+
+
+    <h2>lore</h2>
+    <p class="text">On the night of 26 April 1986, the accident at the Chernobyl nuclear power plant turned the area around the station into an exclusion zone and became strictly protected. After the construction of the sarcophagus over the destroyed power plant, the operation of the Chernobyl nuclear power plant resumed. The presence of a powerful power source and the absence of a population made it possible to set up a complex of secret laboratories in the closed area.</p>
+    
+    <p class="text">By 2009, the Exclusion Zone had between one and three hundred unaccounted individuals who identified themselves as stalkers and were mainly looking for so-called artifacts - anomalous entities that were of high value.</p>
+    
+    <p class="text">By 2010, despite the perimeter military cordons, stalkering had taken on a large scale, although only the outskirts of the Zone had been explored; attempts to penetrate the centre of the Zone ended in failure.</p>
+    
+    <h2><a href="stalker.html">stalker</a></h2>
+    <p class="text">Stalkers exploring the Zone alone. These are the majority, as membership of a group takes precious time, thus diminishing the breeding grounds; moreover, some simply tend by nature to be lonely and independent.</p>
+    
+    <h2><a href="gangsters.html">gangsters</a></h2>
+    <p class="text">Members of the criminal world have come to the Zone for various reasons: to profit from the sale of artifacts, to escape the law, to buy or to sell weapons. There is a lot of that in the Zone, from punks to felons. They are mostly organized into gangs. Although there is still no single gang organization in the Zone, ordinary stalkers are being severely harassed.</p>
+    
+    <h2><a href="military.html">military</a></h2>
+    <p class="text">Soldiers who have received special training after serving in the Zone or stalkers who have signed a contract with the army. They can walk either singly or in groups of up to five people. Ordinary stalkers are not allowed to approach them - they open fire immediately. They are well equipped and equipped. They are mainly used to study the causes and consequences of the disaster and to map the Zone.</p>
+    
+    <h2><a href="debt.html">debt</a></h2>
+    <p class="text">A militarized group with strict discipline: its members live practically by the rules. Only the representatives of "Debt" do not trade in the unique creations of the Zone with the outside world: according to rumors, all the artifacts found by these people surrender to scientists. Protecting the world from the impact of the Zone is the primary goal of every "bondsman". Most of the group’s operations involve the extermination of monsters, so "Debt" raids often save ordinary stalkers from many pressing problems. Long and fiercely opposed to the "Liberty" faction.</p>
+    
+    <h2><a href="freedom.html">freedom</a></h2>
+    <p class="text">Anarchist Stalker Group. He is the only known major group that openly resists government forces and research groups. «Freedom» is the most numerous group in the Zone. Anarchists and daredevils who declared themselves freedom fighters in the territory of the Zone, and therefore constantly in conflict with army units, military stalkers and the group «Debt». Liberians believe that information about what is happening in the Zone cannot be hidden from humanity, thus disputing the monopoly of governmental organizations over the ownership of local secrets and miracles.</p>
+    
+    <h2><a href="monolith.html">monolith</a></h2>
+    <p class="text">A rogue faction that has settled in the centre of the Zone and won’t let anyone in. " The monolith" is fiercely hostile towards all other stalkers, both single-handedly and from different factions. They are short-talk, non-confrontational, and fanatical about what is at the heart of the Zone. The availability of first-class weaponry in monoliths, based on the latest technological developments, heavy uniforms and other equipment, suggests the existence of an unknown source of funding.</p>
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script >
+        var login = document.querySelector('#login');
+var modal_bg = document.querySelector('.modal_bg');
+var modal_close = document.querySelector('.modal_close');
+login.addEventListener('click',function(){
+    modal_bg.classList.add('modal_active');
+});
+modal_close.addEventListener('click',function(){
+    modal_bg.classList.remove('modal_active');
+});
+    </script>
+</body>
+</html>

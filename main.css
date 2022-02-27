@@ -1,0 +1,340 @@
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none ; 
+}
+@font-face {
+    font-family: "Scorchedearth";
+    src: url("fonts/Scorchedearth.woff") format("woff"),
+    url("fonts/Scorchedearth.otf") format("opentype")
+    }
+    @font-face {
+        font-family: "Populationzerobb";
+        src: url("fonts/Populationzerobb.woff") format("woff"),
+        url("fonts/Populationzerobb.otf") format("opentype")
+        }
+body{
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: Populationzerobb;
+
+}
+h1{
+    font-family: Scorchedearth;
+    font-size: 5rem;
+    letter-spacing: 10px;
+}
+/* CONTAINER */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* HEADER */
+
+.header{
+
+    width: 100%;
+    height: 100%;
+    background: url(img/main2.png) no-repeat left top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    min-height: 4rem;
+
+}
+.name p{
+    font-family: Scorchedearth;
+    margin: 0;
+    padding: 0;
+}
+.name a{
+    color: #fff;
+}
+
+
+/* NAV */
+.nav{
+    display: flex;
+    padding-right: 0.6rem;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    transition: 750ms;
+    margin-left: 2.5rem;
+}
+.nav:first-child{
+    margin-left: 0;
+}
+.link:hover{
+    color: rgb(200, 6, 6);
+    text-shadow: 1px 1px 5px rgb(200, 6, 6);
+}
+
+/* main */
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.main_text{
+    width: 50%;
+    height: 100%;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0 0 0 60%;
+    text-transform: uppercase;
+
+}
+.lore{
+    color:rgba(240, 9, 9,1) ;
+    animation: opacity 2s linear infinite ;
+}
+@keyframes opacity {
+    0%{
+        color:rgba(240, 9, 9,1) ;
+        text-shadow:2px 2px 2px rgba(255, 0, 0,1);
+    }
+    50%{
+        color:rgba(240, 9, 9,0.5) ;
+        text-shadow: 2px 2px 2px rgba(255, 0, 0,0.5);
+    }
+    100%{
+        color:rgba(240, 9, 9,1) ;
+        text-shadow: 2px 2px 2px rgba(255, 0, 0,1);
+    }
+}
+.red{
+    color:rgb(240, 9, 9) ;
+    display: inline-block;
+}
+.play{
+    font-family: Scorchedearth;
+    font-size: 2.8rem;
+    background: rgba(179, 13, 4, 0.472);
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    width: 20rem;
+    margin: 0 0 1rem 0;
+
+}
+.play a{
+
+    color: #fff;
+    transition: 750ms;
+
+}
+.play:hover{
+    background: rgba(179, 13, 4, 0.6);
+    cursor: pointer;
+}
+.play:hover a{
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+
+
+/* gameplay */
+.gameplay{
+    width: 100%;
+    height: 100%;
+    min-height: 50rem;
+    position: relative;
+    padding: 1rem 0 0 0;
+    background: url(img/gameplay_bg.png) no-repeat left top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: grayscale(70%);
+}
+.gameplay:before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: url(img/gameplay_bg.png) no-repeat left top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: grayscale(70%);
+    opacity: .2;
+    mix-blend-mode: hard-light;
+    animation: animate 1.2s linear infinite ;
+
+}
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+        filter: hue-rotate(0deg);
+    }
+    10%{
+        background-position: 5px 0;
+    }
+    20%{
+        background-position: -5px 0;
+    }
+    30%{
+        background-position: 10px 0;
+    }
+    40%{
+        background-position: 5px 0;
+    }
+    50%{
+        background-position: -5px 0;
+    }
+    60%{
+        background-position: -5px 0;
+    }
+    70%{
+        background-position: 0 -5px;
+    }
+    80%{
+        background-position: -5px -5px;
+    }
+    81%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 0;
+        filter: hue-rotate(360deg);
+    }
+}
+.gameplay_inner{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gameplay h1{
+
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.about{
+    width: 50%;
+    padding: 1rem;
+    font-size: 2.5rem;
+    background: rgba(0,0,0, 0.3);
+
+}
+.about p{
+    color: #fff;
+    opacity: 1;
+
+}
+.about_images{
+    text-align: center;
+    display: flex;
+    width: 50%;
+    padding: 1rem;
+    flex-wrap: wrap;
+    font-size: 2rem;
+
+}
+.img{
+    padding: 3rem 0 2rem 5rem ;
+    position: relative;
+
+}
+.img img{
+    background: rgba(0,0,0, 0.3);
+width: 9rem;
+height: 9rem;
+}
+
+/* gallery */
+
+.gallery{
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.gallery_img{
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem auto 0;
+    overflow: visible;
+}
+
+.gallery_img img{
+    -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.3));
+}
+
+/* trailer */
+.trailer{
+max-width: 100vw;
+min-height: 120vh;
+background: url(img/trailer2.png) no-repeat left top;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+padding: 2.5rem 0 0 0;
+text-align: center;
+}
+
+.video{
+    width: 45rem;
+    height: 25rem;
+    margin: auto auto;
+
+}
+/* download */
+
+.download{
+text-align: center;
+padding: 2.5rem 0 0 0;
+min-height: 120vh;
+background: url(img/gallery7.jpg) no-repeat left top;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.buttons{
+    padding-top: 5rem ;
+    width: 100%;
+    text-transform: uppercase !important; 
+    font-family: Scorchedearth !important; 
+    font-size: 2rem !important; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

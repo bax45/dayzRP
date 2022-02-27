@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/lore.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="name"><p><a href="index.html">S.T.A.L.K.E.R  LAST  HOPE</a></p></div>
+                <nav class="nav">
+                    <a href="https://discord.com/channels/772818745085132830/772823209158246410" class="link" id="news">NEWS</a>
+                    <a href="https://discord.com/channels/772818745085132830/903924498670174219" class="link" id="rules">RULES</a>
+                    <a href="https://discord.gg/AfedpnGz" class="link" id="discord">DISCORD</a>
+                    <a href="#" class="link" id="login">LOGIN</a>
+        
+                </nav>
+            </div>
+            <div class="modal_bg">
+                <div class="modal">
+                    <h1>login</h1>
+                    <label for="email" name="email"  >Email </label>
+                    <input type="email" placeholder="alex@smith.com">
+                    <label for="password" name="password">Password </label>
+                    <input type="password">
+                    <button class="login_btn">login</button>
+                    <span class="modal_close">X</span>
+                </div>
+            </div>
+
+
+    <h2>monolith</h2>
+    <p class="text">A rogue faction that has settled in the centre of the Zone and won’t let anyone in. " The monolith" is fiercely hostile towards all other stalkers, both single-handedly and from different factions. They are short-talk, non-confrontational, and fanatical about what is at the heart of the Zone. The availability of first-class weaponry in monoliths, based on the latest technological developments, heavy uniforms and other equipment, suggests the existence of an unknown source of funding.</p>
+
+    <h1>coming soon</h1>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script >
+        var login = document.querySelector('#login');
+var modal_bg = document.querySelector('.modal_bg');
+var modal_close = document.querySelector('.modal_close');
+login.addEventListener('click',function(){
+    modal_bg.classList.add('modal_active');
+});
+modal_close.addEventListener('click',function(){
+    modal_bg.classList.remove('modal_active');
+});
+    </script>
+</body>
+</html>
