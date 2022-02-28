@@ -1,6 +1,12 @@
 @media screen and (max-width: 1130px) {
+html{
+    font-size: 15px ;
+}
     .gameplay_inner{
         flex-direction: column;
+    }
+    .gameplay h1{
+        margin: 2rem 0;
     }
     .about,.about_images{
         width: 90%;
@@ -21,5 +27,74 @@
         margin: 2rem 0;
         width: 60%;
     }
+    .gallery{
+        height: 50vh;
+
+    
+    }
+    .trailer{
+        min-height: 0;
+        height: 70vh;
+        padding: 1rem 0 6rem 0;
+    }
+    .download{
+        min-height: 0;
+        height: 80vh;
+    }
  
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        min-height: 50vh;
+
+    }
+    .header__inner{
+    height: 3rem;
+    font-size: 2rem;
+    }
+.main_text{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+
+}
+.main_text p{
+    padding: 0 2rem;
+}
+.img{
+    padding: 3rem 0 2rem 3rem;
+}
+}
+@media screen and (max-width: 676px){
+.download{
+    height: 100%;
+}
+   .img{
+       width: 50%;
+   }
+}
+@media screen and (max-width: 590px){
+    html{
+        font-size: 10px;
+    }
+    .text{
+        padding: 0 2rem;
+    }
+    .gallery{
+        height: 25vh;
+        padding-top: 2rem;
+
+    
+    }
+    .trailer{
+      height: 50vh;
+      background-position: 80% 80%;
+    }
 }
