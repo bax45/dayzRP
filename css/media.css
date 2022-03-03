@@ -97,4 +97,20 @@ html{
       height: 50vh;
       background-position: 80% 80%;
     }
+
+}
+
+
+@media screen and (max-width: 410px){
+    .video{
+        width: 30rem;
+        height: 15rem;
+    }
+    body{
+        overflow: hidden;
+    }
+    .modal_bg{
+        width: 80vw;
+
+    }
 }
