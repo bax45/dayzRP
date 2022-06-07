@@ -88,14 +88,21 @@ html{
         padding: 0 2rem;
     }
     .gallery{
-        height: 25vh;
+        height: 60vh;
         padding-top: 2rem;
 
     
     }
     .trailer{
-      height: 50vh;
+      height: 70vh;
       background-position: 80% 80%;
+    }
+    .trailer h1{
+        font-size: 4rem;
+    }
+    .img_text{
+        letter-spacing: 0.1rem;
+        font-size: 2rem;
     }
 
 }
@@ -106,8 +113,11 @@ html{
         width: 30rem;
         height: 15rem;
     }
-    body{
-        overflow: hidden;
+    h1{
+        font-size: 4rem;   
+    }
+     .trailer h1{
+        font-size: 3rem;
     }
     .modal_bg{
         width: 80vw;
