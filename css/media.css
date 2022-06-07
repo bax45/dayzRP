@@ -94,9 +94,13 @@ html{
     
     }
     .trailer{
-      height: 70vh;
+      height: 60vh;
       background-position: 80% 80%;
     }
+    .video {
+    width: 50rem;
+    height: 30rem;
+}
     .trailer h1{
         font-size: 4rem;
     }
